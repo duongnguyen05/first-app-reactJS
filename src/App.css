@@ -1,0 +1,114 @@
+.app {
+  background-color: #f5f5f5;
+}
+._content {
+  padding-top: 130px;
+}
+.nav-header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header .nav-left-control {
+  margin-left: 17px;
+}
+.nav-header .nav-right-control {
+  margin-right: 17px;
+}
+
+.nav-header .nav-right-control .shopping-cart {
+  color: #0a1568;
+  font-size: 27px;
+}
+
+.nav-header .logo {
+  width: 150px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.product-grid .product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1250px;
+}
+
+.product-grid .product-wrapper .product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: calc(20% - 30px);
+  min-width: 200px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 27px;
+  transition: all 0.05s ease-in-out;
+}
+
+.product-grid .product-wrapper .product-item:hover {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+}
+
+.product-grid .product-wrapper .product-item .product-name {
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+}
+
+.product-grid .product-wrapper .product-item .price-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: column;
+}
+
+.product-grid .product-wrapper .product-item .product-price {
+  text-decoration: line-through;
+  position: relative;
+  margin: 0;
+  line-height: 18px;
+}
+.product-grid .product-wrapper .product-item .product-price.original {
+  font-size: 11px;
+}
+.product-grid .product-wrapper .product-item .product-price.special {
+  text-decoration: none;
+  color: #f5426c;
+}
+.product-grid .product-wrapper .product-item .product-price span {
+  font-size: 10px;
+  position: absolute;
+  top: 0px;
+}
+.product-grid .product-wrapper .product-item .product-price .discount {
+  margin-left: 13px;
+}
+
+.product-grid .product-wrapper .product-item .btn-add-to-cart {
+  display: flex;
+  width: 125px;
+  background-color: #f66789;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 5px;
+  height: 30px;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.product-grid .product-wrapper .product-item .btn-add-to-cart:hover {
+  background-color: #f5426c;
+}
