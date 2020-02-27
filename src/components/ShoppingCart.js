@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class ShoppingCart extends Component {
+  componentDidMount() {
+    console.log('this shoppingCart: ', this.props.shoppingCart);
+  }
   render() {
     const { shoppingCart } = this.props;
     return (
@@ -16,7 +19,18 @@ class ShoppingCart extends Component {
               </div>
             ) : (
               <div className="shopping-cart-info">
-                <h1>You have product(s)</h1>
+                <ul className="cart-wrapper">
+                  { shoppingCart.map(product => {
+                    return (
+                      <li className="product-item">
+                        {/* thumbnail */}
+                        {/* name, describtion */}
+                        {/* price, special price */}
+                        {/* quantity */}
+                      </li>
+                    );
+                  }) }
+                </ul>
               </div>
             )
             /* shopping cart */
